@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Barang</title>
+  </head>
+  <body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; background: rgb(226, 126, 126)">
+    <table align="center" style="background-color: #fff; margin-top: 15px; margin-bottom: 15px; border: 1px solid">
+      <tr>
+        <td style="border-right: 1px solid; padding: 0 60px">beranda</td>
+        <td style="border-right: 1px solid; padding: 0 60px">buat tautan</td>
+        <td style="border-right: 1px solid; padding: 0 60px">transaksi sebelumnya</td>
+        <td style="border-right: 1px solid; padding: 0 60px">keamanan</td>
+        <td style="padding: 0 60px">keluar</td>
+      </tr>
+    </table>
+
+    <form action="bayar.html">
+      <table align="center" cellpadding="10" style="width: 980px">
+        <tbody>
+          <tr>
+            <td rowspan="9" width="270">
+              <img src="macbookpro.jpg" width="260" alt="ini photo" style="border: 2px solid rgb(0, 0, 0)" /> <br />
+              <button style="background-color: rgb(197, 108, 108); color: rgb(238, 221, 221); padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px; margin-bottom: 225px">
+                unggah gambar
+              </button>
+            </td>
+            <td width="160px">judul :</td>
+            <td><input type="text" name=" barang" /></td>
+          </tr>
+          <tr>
+            <td>keterangan :</td>
+            <td><textarea name="deskripsi" cols="40" rows="4"></textarea></td>
+          </tr>
+          <tr>
+            <td>nomber akun :</td>
+            <td><input type="number" name="nomor akun" /></td>
+          </tr>
+
+          <tr>
+            <td>Bank :</td>
+            <td>
+              <select>
+                <option>BRI</option>
+                <option>MANDIRI</option>
+                <option>BCA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Pemilik akun :</td>
+            <td><input type="text" id ="pemegang akun" style ="width:350px" value="jamilatun khoerunnisa" checked>
+          </tr>
+          <tr>
+            <td>transaksi :</td>
+            <td>
+              <input type="number" name="transaksi" min="0" max="10" placeholder="0" /> <br />* jika transaksi untuk 2 orang lebih,pilih 2 dari daftar dropdown <br />
+              <input type="checkbox" name="check" /> kirim ke ponsel <br />
+              <input type="checkbox" name="check" /> kirim ke email
+            </td>
+          </tr>
+          <tr>
+            <td>kirim ke no :</td>
+            <td><input type="number" name="nomor telepon" /></td>
+          </tr>
+          <tr>
+            <td>kirim ke email :</td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit"
+                value="buat tautan "
+                style="background-color: #0a0c0a; color: rgb(197, 103, 103); font-weight: bold; padding: 3px 15px; border: 2px solid #000; border-radius: 1px; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 2.5px 2.5px 2.6px"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
